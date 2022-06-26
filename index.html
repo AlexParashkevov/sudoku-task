@@ -1,0 +1,76 @@
+<html>
+  <head>
+    <title>ForkyDoku</title>
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+
+  <body>
+    <div class="canvas-contain">
+      <canvas class="webgl"></canvas>
+    </div>
+    <div class="wrapper">
+      <div class="left">
+        <section>
+          <div class="right-float">
+            <div class="custom-select" style="width:200px;">
+              <h3>New Game</h3>
+              <select>
+                <option class="ui basic difficulty button" value="0"
+                  >Easy</option
+                >
+                <option class="ui basic difficulty button" value="1"
+                  >Easy</option
+                >
+                <option class="ui basic difficulty button" value="2"
+                  >Medium</option
+                >
+                <option class="ui basic difficulty button" value="3"
+                  >Hard</option
+                >
+                <option class="ui basic difficulty button" value="4"
+                  >Random</option
+                >
+              </select>
+            </div>
+            <button class="ui basic button clear">
+              Clear
+            </button>
+          </div>
+        </section>
+      </div>
+      <div class="center">
+        <h1 id="solved"></h1>
+        <div class="board"></div>
+      </div>
+      <div class="right">
+        <div class="control-panel">
+          <section>
+            <div class="right-float" tabindex="0">
+              <span>difficulty</span>
+              <p class="diff"></p>
+            </div>
+          </section>
+          <section>
+            <button class="ui basic fluid large button solve">Solve</button>
+          </section>
+        </div>
+      </div>
+    </div>
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.141.0/build/three.min.js"></script>
+    <script src="https://cdn.rawgit.com/mrdoob/three.js/master/examples/js/loaders/GLTFLoader.js"></script>
+    <script
+      type="module"
+      type="text/javascript"
+      src="./js/setupBoard.js"
+    ></script>
+    <script type="module" type="text/javascript" src="./js/api.js"></script>
+    <script type="module" type="text/javascript" src="./js/script.js"></script>
+    <script type="module" type="text/javascript" src="./js/index.js"></script>
+    <script type="text/javascript" src="./js/three.js" defer></script>
+  </body>
+</html>
